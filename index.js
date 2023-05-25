@@ -7,20 +7,13 @@ function greet () {
 
     let age = prompt ("How old are you?")
     console.log (parseInt(age)) //Only if the number is starting the answer, will give NaN value is the words are in front of the value; Only looks at the first value starting the string"
-    
-   // confirm ("Have your birthday already passed this year?")
-   // alert ("If you already had a birthday, then you were born in " + ((new Date().getFullYear()) - age))
-   // alert ("If you have NOT had a birthday yet, then you were born in " + ((new Date().getFullYear()) - age + 1))
-
 
     if (confirm) {
         var retVal =  confirm ("Have your birthday already passed this year?");
         if (retVal === true)
         {alert ("If you already had a birthday, then you were born in " + ((new Date().getFullYear()) - age))}
-
-    else{ 
-        (retVal === false)
-        alert ("If you have NOT had a birthday yet, then you were born in " + ((new Date().getFullYear()) - age + 1))}
+    else { 
+        alert ("If you have NOT had a birthday yet, then you were born in " + ((new Date().getFullYear()) - age - 1))}
     }
     
 }
